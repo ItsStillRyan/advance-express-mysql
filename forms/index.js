@@ -37,7 +37,7 @@ const createProductForm = () => {
             errorAfterField: true,
             cssClass: {
                 label: ['form-label']
-            }
+            },
 
         }),
         'description': fields.string({
