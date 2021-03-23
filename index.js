@@ -26,11 +26,13 @@ app.use(
 //importing routes
 const landingRoutes = require('./routes/landing')
 const coperateRoutes = require('./routes/coperate')
+const productRoute = require('./routes/products')
 
 async function main() {
     //if USL begin with a '/', use landingRoutes
     app.use('/', landingRoutes)
     app.use('/invest', coperateRoutes)
+    app.use('/products', productRoute)
 
 }
 
